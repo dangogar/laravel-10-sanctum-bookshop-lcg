@@ -45,7 +45,7 @@ Una API RESTful completa para gestionar una biblioteca de libros usando Laravel 
 ## Estructura del Proyecto
 
 ```
-**app/**
+app/
 ├── Http/
 │   ├── Controllers/ <- Controlador para listar, guardar, modificar, mostrar y eliminar
 │   │   ├── AuthController.php  <- Controlador de usuarios
@@ -69,10 +69,10 @@ Una API RESTful completa para gestionar una biblioteca de libros usando Laravel 
     ├── AuthServiceProvider.php <- Autorizar las políticas BookPolicy y CategoryPolicy
     └── RouteServiceProvider.php <- Configurar las rutas de api
     
-**routes/**
+routes/
 └── api.php  <- Rutas públicas y protegidas Sanctum (ver Rutas disponibles)
     
-**database/**
+database/
 ├── migrations/  <- Tablas de categorías y libros (ver Estructura de la Base de Datos)
 │   ├── create_categories_table.php
 │   └── create_books_table.php
@@ -84,13 +84,13 @@ Una API RESTful completa para gestionar una biblioteca de libros usando Laravel 
     ├── CategoryFactory.php
     └── BookFactory.php
         
-**tests/**
+tests/
 └── Feature/  <- Testear el funcionamiento
     ├── AuthTest.php
     ├── BookTest.php
     └── CategoryTest.php
     
-**Bookshop_API.postman_collection.json** <- Colección de tests para Postman
+Bookshop_API.postman_collection.json <- Colección de tests para Postman
 ```
 
 
@@ -310,7 +310,7 @@ Los tests específicos de una clase, p. ej. AuthTest:
 
 1. Abre un espacio de trabajo
 2. Pulsa el botón "Import"
-3. Selecciona el archivo "Bookshop_API.postman_collection.json"
+3. Selecciona el archivo "Bookshop_API.postman_collection.json" que está en el proyecto
 
 
 ## Licencia
