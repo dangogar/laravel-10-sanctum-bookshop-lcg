@@ -38,7 +38,7 @@ Una API RESTful completa para gestionar una biblioteca de libros usando Laravel 
 
 - PHP 8.1+
 - Composer
-- SQLite o MySQL/MariaDB (si necesitas ésta, se habrá que configurar en .env y phpunit.xml)
+- SQLite o MySQL/MariaDB (si desea esta, se habrá que configurar en .env y phpunit.xml)
 - Laravel 10
 
 
@@ -188,7 +188,7 @@ composer install
 cp .env.example .env
 ```
 
-4. Si desea usar "mysql", configura tu base de datos en `.env`:
+4. OPCIONAL. Si desea usar "mysql", configura la base de datos en `.env`:
 ```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
